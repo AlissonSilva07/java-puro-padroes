@@ -1,5 +1,22 @@
+import edu.alisson.singleton.SingletonEager;
+import edu.alisson.singleton.SingletonLazy;
+import edu.alisson.singleton.SingletonLazyHolder;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        SingletonLazy lazy = SingletonLazy.getInstancia();
+        System.out.println(lazy);
+        lazy = SingletonLazy.getInstancia();
+        System.out.println(lazy);
+
+        SingletonEager eager = SingletonEager.getInstancia();
+        System.out.println(eager);
+        eager = SingletonEager.getInstancia();
+        System.out.println(eager);
+
+        SingletonLazyHolder holder = SingletonLazyHolder.getInstancia();
+        System.out.println(holder);
+        holder = SingletonLazyHolder.getInstancia();
+        System.out.println(holder);
     }
 }
