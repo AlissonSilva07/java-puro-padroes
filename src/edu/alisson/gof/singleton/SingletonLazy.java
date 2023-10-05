@@ -1,4 +1,4 @@
-package edu.alisson.singleton;
+package edu.alisson.gof.singleton;
 
 /**
  * Singleton preguiçoso
